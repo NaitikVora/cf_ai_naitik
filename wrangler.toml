@@ -1,0 +1,21 @@
+name = "cf-ai-code-reviewer"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Workers AI binding
+[ai]
+binding = "AI"
+
+# Durable Objects binding
+[[durable_objects.bindings]]
+name = "REVIEW_SESSIONS"
+class_name = "ReviewSession"
+
+# Durable Objects migration
+[[migrations]]
+tag = "v1"
+new_classes = ["ReviewSession"]
+
+# Assets for serving the frontend
+[site]
+bucket = "./public"

@@ -1,0 +1,35 @@
+{
+  "name": "cf_ai_naitik",
+  "version": "1.0.0",
+  "description": "AI Code Review Bot powered by Cloudflare Workers AI (Llama 3.3) with Durable Objects for persistent state",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaitikVora/cf_ai_naitik.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "code-review",
+    "llama",
+    "durable-objects"
+  ],
+  "author": "Naitik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NaitikVora/cf_ai_naitik/issues"
+  },
+  "homepage": "https://github.com/NaitikVora/cf_ai_naitik#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251121.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.50.0"
+  }
+}
