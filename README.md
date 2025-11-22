@@ -1,1 +1,1 @@
-# -cf_ai_naitik
+# cf_ai_naitik
